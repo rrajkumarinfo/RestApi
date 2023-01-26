@@ -1,0 +1,19 @@
+Please add the below in Test tab to parse the XML Response and extract sys_id value
+
+var resp=xml2Json(responseBody);
+var sys_id=resp.response.result.sys_id;
+
+Explanation:
+===============
+1) Convert XML responseBody to Json using xml2Json in postman
+var resp=xml2Json(responseBody)
+2) Now parse the json and extract the value of sys_id
+var sys_id=resp.response.result.sys_id;
+
+
+
+Assignment:
+==========
+1) Update Change request with response having only description and Shrot description. Also assert description value in Tests Tab
+2) Delete Change request asserting the status code
+3) Create a change request with request in XML format
